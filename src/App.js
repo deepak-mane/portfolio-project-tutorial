@@ -1,8 +1,10 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Particles from 'react-tsparticles';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+
 function App() {
   const particlesInit = (main) => {
     console.log(main);
@@ -93,6 +95,7 @@ function App() {
       />
       <Navbar />
       <Header />
+      <AboutMe />
     </>
   );
 }
