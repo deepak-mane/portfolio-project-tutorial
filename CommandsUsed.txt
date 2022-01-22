@@ -1,0 +1,14 @@
+npm i --save express 
+npm i --save-dev nodemon
+npm i --save ejs
+npm i --save mongodb
+npm i --save bcryptjs
+npm i --save csurf
+npm i --save express-session 
+npm i --save connect-mongodb-session
+npm i --save multer
+npm i --save uuid
+
+To create admin in database : online-shop
+db.users.updateOne({_id: ObjectId("61e9dee05e147b5b680cf054")}, {$set: { isAdmin: true} })
+db.users.updateOne({_id: ObjectId("61eaa6e7edbf937f1110c849")}, {$set: { isAdmin: true} })
