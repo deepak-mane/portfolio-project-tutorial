@@ -4,7 +4,7 @@ const adminController = require('../controllers/admin.controller');
 const imageUploadMiddleware = require('../middlewares/image-upload');
 
 const router = express.Router();
-
+// All below routes would have /admin prefixed in app.js
 router.get('/products', adminController.getProducts); // /admin/products
 
 router.get('/products/new', adminController.getNewProduct);
