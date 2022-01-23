@@ -12,3 +12,7 @@ npm i --save uuid
 To create admin in database : online-shop
 db.users.updateOne({_id: ObjectId("61e9dee05e147b5b680cf054")}, {$set: { isAdmin: true} })
 db.users.updateOne({_id: ObjectId("61eaa6e7edbf937f1110c849")}, {$set: { isAdmin: true} })
+
+
+ErrorCodes Listed Html
+https://umbraco.com/knowledge-base/http-status-codes/
