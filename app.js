@@ -34,7 +34,8 @@ const sessionConfig = createSessionConfig();
 
 app.use(expressSession(sessionConfig));
 app.use(csrf());
-// To add cart to every visitor, logged in user by default
+
+// To Active cartMiddleware so cart is intialized for visitor, logged in user by default
 app.use(cartMiddleware);
 
 app.use(addCsrfTokenMiddleware);

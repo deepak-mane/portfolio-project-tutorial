@@ -22,11 +22,25 @@ class Cart {
         // this.totalQuantity = this.totalQuantity + 1; --- Can be written as below
         this.totalQuantity++;
         // this.totalPrice = this.totalPrice + product.price; --- Can be written as below
-        this.totalPrice += product.price;
+        this.totalPrice += product.price
+        // console.log(
+        //   'var:this.totalQuantity is',this.totalQuantity,
+        //   'var:this.totalPrice is', this.totalPrice,
+        //   'atloc:method addItem'
+        // );
         return;
       }
     }
+    /**/
     this.items.push(cartItem);
+    this.totalQuantity++;
+    this.totalPrice += product.price    
+
+    // console.log(
+    //   'var:this.totalQuantity is',this.totalQuantity,
+    //   'var:this.totalPrice is', this.totalPrice,
+    //   'atloc:method addItem'
+    // );    
    }
 
 }

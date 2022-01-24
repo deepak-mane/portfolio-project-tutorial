@@ -4,6 +4,9 @@ const cartController = require('../controllers/cart.controller');
 
 const router = express.Router();
 // All routes below would have /cart prefixed in app.js
+
+router.get('/', cartController.getCart);
+
 router.post('/items',cartController.addCartItem); 
 
 module.exports = router;

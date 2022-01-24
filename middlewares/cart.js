@@ -1,6 +1,7 @@
 const Cart = require('../models/cart.model');
 
 function initializeCart(req, res, next) { 
+  // console.log('var:res.locals.cart is',res.locals.cart,'atloc:func initializeCart');
   let cart;
   if (!req.session.cart) {
     cart = new Cart();
@@ -14,6 +15,12 @@ function initializeCart(req, res, next) {
   } 
 
   res.locals.cart = cart;
+
+  // console.log(
+  //   'var:res.locals.cart is', res.locals.cart, 
+  //   'atloc:func initializeCart'
+  // );
+  
   next();
 }
 
